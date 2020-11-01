@@ -1,0 +1,11 @@
+import warnings
+warnings.filterwarnings("ignore")
+import matplotlib.pyplot as graph
+%matplotlib inline
+graph.rcParams['figure.figsize'] = (15,5)
+graph.rcParams["font.family"] = 'DejaVu Sans'
+graph.rcParams["font.size"] = '12'
+import pandas as pd
+import statsmodels.formula.api as smf
+dataset = pd.read_csv('Data/chocolate data multiple linear regression.txt', index_col=False, sep="\t",header=0)
+print(dataset.head())
